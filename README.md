@@ -37,7 +37,7 @@ var personSchema = mongoose.Schema({
         type: ShortId,
         len: 7,     // Length 7 characters
         base: 64,   // Web-safe base 64 encoded string
-        alphabet: undefined // Use default alphabet for base
+        alphabet: undefined, // Use default alphabet for base
         retries: 4  // Four retries on collision
     },
     name: String
